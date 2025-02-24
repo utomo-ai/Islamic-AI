@@ -2,86 +2,40 @@
 Utomo Muhammad Isa © 2025
 Islamic A.I a full desktop Application integrated LLM and Local LLM with TTS. A.I assistant using SQL with Al-Qur'an and Hadith Search capabilities. A.I Summary on Web search.
 
-RUN APP:
-(Put LLAMAFILE in the same folder)
+1. Shalat Time :
+    settings[/32].ini 	>> latitude =<LAT> , longitude =<LONG>
 
-Islamic A.I.bat 	(Windows OS 64Bit)
-32BIT.bat 		(Windows OS 32Bit)
+2. Themes : 
+    dark/light 	>> Dark Theme [Default]
 
-NET-SQL.exe
-----------------
-This app is to convert all [NET] Web Search Results into a Database.
-Click to create a new net.db in files/net/net.db
+3. TTS : README [Text To Speech]
 
-INSTALL FONT:
-lvnm.ttf
+4. A.I Status :  Gemini, Llamafile & Ollama
 
-ADD API KEYS:
-GEMINI_API_KEY=<REGISTER_GOOGLE_GEMINI>
-WA_APPID=<REGISTER_WolfRamAlpha>
-YOUTUBE_API_KEY=<REGISTER_GOOGLE_CUSTOM_API_YOUTUBE>
-GOOGLE_CSE_API_KEY=<REGISTER_GOOGLE_CUSTOM_API_SEARCH>
-GOOGLE_CSE_CX=17ccb55a057d549a5
-NEWS_API_KEY=<REGISTER_https://newsapi.org/>
+5. FILE : Reload File. Saving File, Open File, Settings
+    Reload File >> Last Saved File [files/file.txt]
+    Saving File >> Saved all text in TextBox
+    Open File 	>> Format txt file
+    Settings	>> GUI settings.ini
 
-PRAYER TIME
-------------------
-Methods = Muslim World League
-1. SETTINGS (page)
-2. SETTINGS.INI (SETTINGS32.INI)
-    [BASIC]
-    latitude = <latitude>
-    longitude = <longitude>
+API KEYS
+_________
 
-A.I MODEL
--------------
-LOCAL Model :
-You need to install ollama (OLLAMA SETUP.txt)
-llamafile :
-Create a folder (eg. C:\llama)
-Use LLM_FILE.bat to open llamafile
-("C:\llama\qwen.llamafile.exe")
+Note:
+(*) Youtube and Google Custom Search API are the same API Key
+(*) GOOGLE_CSE_CX is not Client_ID but Project ID
+(*) WA_APPID & News API Provided for testing ONLY, please get your own API KEY.
 
-Browser Settings:
-Ollama 		= http://localhost:11434
-Lllamafile 	= http://localhost:8080
-
-ONLINE Model:
-Get API key from :https://aistudio.google.com/app/apikey
-
-Slow Computer/Laptop :
-TURN OFF TTS
-
-Troubleshooting APP freeze:
-- Temporary (Not Responding), because A.I generate response in a streaming with a long text. Responses with EMOJIS and XML/HTML formats. (You could tell A.I : No Emojis and HTML formats) 
-- No Quota or Online Server Busy 
-
-
-Text To Speech OPTIONS
-----------------------
-1. SETTINGS (page)
-2. SETTINGS.INI (SETTINGS32.INI)
-   [TTS SETTINGS]
-   language = <YOUR LANGUAGE>
-   lang_label = <LANGUAGE LABEL>
-
-Google TTS support languages:
-https://gtts.readthedocs.io/en/latest/module.html#languages-gtts-lang
-
-English (Australia)
-English (United Kingdom)
-English (United States)
-English (Canada)
-English (India)
-English (Ireland)
-English (South Africa)
-English (Nigeria)
-French (Canada)
-French (France)
-Mandarin (China Mainland)
-Mandarin (Taiwan)
-Portuguese (Brazil)
-Portuguese (Portugal)
-Spanish (Mexico)
-Spanish (Spain)
-Spanish (United States)
+GEMINI_API_KEY	=https://aistudio.google.com/app/apikey 
+WA_APPID	=https://products.wolframalpha.com/api
+YOUTUBE_API_KEY=https://www.googleapis.com/youtube/v3/search
+GOOGLE_CSE_API_KEY=https://console.cloud.google.com/apis/dashboard
+GOOGLE_CSE_CX=Google Project Custom Search KEY
+NEWS_API_KEY=https://newsapi.org/
+6. SEARCH : AL-QUR'AN, SUNNAH, A.I SQL, NET, Sqlite Editor 
+    AL-QUR'AN 	>> Data from Kingdom Of Saudi Arabia - UthmanicHafs v2.0
+				   Translation Kemenag (Bahasa Indonesia)
+    A.I SQL 	>> Llamafile & Ollama models with Al-Qur'an & Hadith database
+    NET		    >> Web Search 
+		           Google. Youtube, Wikipedia, News Group and A.I Summary
+    Sqlite Editor 	>> Sqlite3 Editor [Default=hadith.db]
